@@ -95,8 +95,13 @@
          <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
         <footer>
-            <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-            </footer>
+            <p>© UMSI Academic Advising <span id="year"></span> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            });
+        </script>
     </body>
     </html>
   
